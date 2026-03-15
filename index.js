@@ -5,6 +5,8 @@
  */
 function sum(a, b) {
   // TODO: Implement this function.
+
+  return a + b;
 }
 
 /**
@@ -13,6 +15,8 @@ function sum(a, b) {
  */
 function reverseString(str) {
   // TODO: Implement this function.
+
+
 }
 
 /**
@@ -21,6 +25,17 @@ function reverseString(str) {
  */
 function findLargest(numbers) {
   // TODO: Implement this function.
+
+  let largest = 0;
+
+  for(let i=0; i<numbers.length(); i++){
+    if(numbers[i] > numbers[largest]){
+      largest = i;
+    }
+    
+  }
+
+  return numbers[largest];
 }
 
 /**
