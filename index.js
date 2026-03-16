@@ -16,6 +16,13 @@ function sum(a, b) {
 function reverseString(str) {
   // TODO: Implement this function.
 
+  let reversed = "";
+
+  for(let i=1; i<= str.length; i++){
+    reversed += str[str.length-i]; 
+  }
+
+  return reversed;
 
 }
 
@@ -26,7 +33,7 @@ function reverseString(str) {
 function findLargest(numbers) {
   // TODO: Implement this function.
 
-  let largest = 0;
+  let largest = 0; //better approach if done let largest = number[0]; 
 
    if(numbers.length == 0){
     return null;
