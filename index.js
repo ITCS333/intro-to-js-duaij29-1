@@ -64,8 +64,8 @@ function isPalindrome(str) {
 
   str = str.toLocaleLowerCase();
 
-  for(let i=1; i<str.length/2; i++){
-    if(str[i-1] !== str[str.length - i]){
+  for(let i=0; i<str.length/2; i++){
+    if(str[i-0] !== str[str.length - 1 - i]){
       return false
     }
   }
@@ -79,6 +79,9 @@ function isPalindrome(str) {
  */
 function filterEvenNumbers(numbers) {
   // TODO: Implement this function.
+
+  const newArray = numbers.filter((num => num % 2 == 0));
+  return newArray;
 }
 
 
