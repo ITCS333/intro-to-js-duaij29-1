@@ -28,21 +28,23 @@ function findLargest(numbers) {
 
   let largest = 0;
 
-   if(numbers.length == 0){
+   if(numbers.length() == 0){
     return null;
    }
 
-   else if(numbers[i] > numbers[largest]){
-    for(let i=0; i<numbers.length(); i++){
    
+    for(let i=0; i<numbers.length(); i++){
+
+      if(numbers[i] > numbers[largest]){
       largest = i;
+      }
     }
     return numbers[largest];
     
   }
 
   
-}
+
 
 /**
  * @param {string} str The string to check.
