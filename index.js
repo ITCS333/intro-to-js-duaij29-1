@@ -28,12 +28,12 @@ function findLargest(numbers) {
 
   let largest = 0;
 
-   if(numbers.length() == 0){
+   if(numbers.length == 0){
     return null;
    }
 
    
-    for(let i=0; i<numbers.length(); i++){
+    for(let i=0; i<numbers.length; i++){
 
       if(numbers[i] > numbers[largest]){
       largest = i;
